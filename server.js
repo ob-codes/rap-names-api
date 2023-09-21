@@ -37,3 +37,6 @@ app.get('/api/:name', (req, res) => {
 app.listen(process.env.PORT || PORT, ()=> {
   console.log(`serving is running on port: ${PORT}`);
 });
+
+// Export the Express API
+module.exports = app;
